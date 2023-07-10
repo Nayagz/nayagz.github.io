@@ -1,2 +1,9 @@
 body {
-    background: url (https://www.barbican.org.uk/sites/default/files/styles/hero_constrained_super_wide/public/images/2020-11/NEW%20-%20Photo%20for%20Website.jpeg?itok=R-v98tvy)}
+    background-image: url(https://www.barbican.org.uk/sites/default/files/styles/hero_constrained_super_wide/public/images/2020-11/NEW%20-%20Photo%20for%20Website.jpeg?itok=R-v98tvy);
+}
+
+h1 {
+    font-family: Calibri;
+    font-size: 30px;
+    text-align: center;
+}
