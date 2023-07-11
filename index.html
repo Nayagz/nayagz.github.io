@@ -27,7 +27,7 @@
         font-size: 20px;
         color: white;
     }
-    
+
     .overlay {
         position: absolute;
         top: 50%;
@@ -43,13 +43,42 @@
         align-items: center;
     }
 
+    #sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        background-color: rgba(0,0,0,0.7);
+        color: white;
+        padding: 20px;
+    }
+
+    #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #sidebar ul li {
+        padding: 10px 0;
+    }
+
   </style>
 </head>
 <body>
+  <div id="sidebar" class="clearfix">
+    <div id="sidebar-content">
+      <ul id="pages" class="list">
+        <li data-ballon="right" data="home">Home</li>
+        <li data-ballon="right" data="about">About</li>
+        <li data-ballon="right" data="contact">Contact</li>
+      </ul>
+    </div>
+  </div>
   <div class="overlay">
     <h1>Hello stranger, welcome to my personal website</h1>
     <h2>About Me</h2>
-    <p>Hey! My name is Nana. I am a product manager with a new passion for software development. I like coffee, creating new things.</p>
+    <p>Hey! My name is Nana. I am a product manager with a new passion for software development. I like this, and that.</p>
     <h2>Contact Me</h2>
     <div class="contact-info">
       <p>Email: nana.doe@example.com</p>
