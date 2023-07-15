@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #BFBFBF;
-    --secondary-color: #AFB8A8;
+    --primary-color: #e2cc58;
+    --secondary-color: #B76049;
     --tertiary-color: #38383B;
     --black-color: #000000;
   
     --main-font: 'Helvetica', sans-serif;
-    --title-font: 'Georgia', serif;
+    --title-font: 'Century Gothic', sans-serif;
   
-    --page-max-width: 1800px;
+    --page-max-width: 1200px;
     --site-margin: 4vw;
   }
 
@@ -20,6 +20,7 @@
 body {
     font-family: var(--main-font);
     background-image: url("https://github.com/Nayagz/Nayagz.github.io/blob/main/7.jpg?raw=true");
+    background-color: var(--primary-color);
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--tertiary-color);
@@ -37,24 +38,39 @@ p {
 }
 
 .big-title {
-    font-size: 3em; 
-    font-weight: bold; 
-    color: var(--secondary-color); 
-    text-align: center; 
-    padding: 20px 0; 
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.med-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+.sub-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 0 0;
 }
   
 .about-text {
-    width: 70%; 
+    width: 90%;
     text-align: justify; 
-    margin: auto; 
+/*    margin: auto; */
     line-height: 1.6;
 }
   
 .section-container {
     max-width: 800px;  
-    margin: auto;     
-    padding: 0 20px;  
+    margin: auto;
+    padding: 0 0;
 }
 
 #navbar {
@@ -69,8 +85,15 @@ p {
 }
   
 #navbar a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
     text-decoration: none;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+
 }
   
 .full-vh {
@@ -110,7 +133,7 @@ p {
     }
     .content {
       width: 100%;
-      padding: 20px;
+      padding: 10px;
     }
     .big-title {
       font-size: 2em; 
