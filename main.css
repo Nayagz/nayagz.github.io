@@ -19,7 +19,7 @@
   
   body {
     font-family: Helvetica Neue;
-    background-image: url("https://github.com/Nayagz/Nayagz.github.io/blob/main/7.jpg?raw=true");
+    background-image: url("https://https://github.com/Nayagz/Nayagz.github.io/blob/main/7.jpg?raw=true");
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--tertiary-color);
@@ -35,6 +35,21 @@
     font-family: 'Adobe Garamond Pro';
   }
 
+  .big-title {
+    font-size: 3em; 
+    font-weight: bold; 
+    color: var(--secondary-color); 
+    text-align: center; 
+    padding: 20px 0; 
+  }
+  
+  .about-text {
+    width: 70%; 
+    text-align: justify; 
+    margin: auto; 
+    line-height: 1.6;
+  }
+  
   #navbar {
     background-color: var(--tertiary-color);
     padding: 1em;
