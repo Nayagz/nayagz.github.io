@@ -1,9 +1,74 @@
 body {
-    background-image: url(https://www.barbican.org.uk/sites/default/files/styles/hero_constrained_super_wide/public/images/2020-11/NEW%20-%20Photo%20for%20Website.jpeg?itok=R-v98tvy);
+    background-image: url(https://wallpaperaccess.com/full/4219085.png);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ebebeb;
+}
+
+h1, h2, p {
+    font-family: Calibri;
+    padding: 10px 0;
 }
 
 h1 {
-    font-family: Calibri;
+    font-size: 40px;
+}
+
+h2 {
     font-size: 30px;
-    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100px;
+    color: #ebebeb;
+    padding: 20px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px 0;
+}
+
+.content {
+    width: 70%;
+    max-width: 600px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio, #about, #contact {
+    margin-bottom: 60px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
