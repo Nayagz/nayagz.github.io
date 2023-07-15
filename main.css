@@ -93,10 +93,7 @@ p {
 .mySlides {
     display: none;
 }
-  
-#contact-form {
-    animation: fadein 2s;
-}
+
   
 @keyframes fadein {
     from { opacity: 0; }
