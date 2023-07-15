@@ -1,13 +1,15 @@
-const navLinks = document.querySelectorAll('#sidebar ul li');
+window.addEventListener("DOMContentLoaded", () => {
+  const navbarLinks = document.querySelectorAll("#navbar a");
 
-navLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const id = this.getAttribute('data');
-        const section = document.getElementById(id);
-        window.scrollTo({
-            top: section.offsetTop,
-            behavior: 'smooth',
-        });
+  navbarLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = e.target.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: "smooth",
+      });
     });
+  });
 });
