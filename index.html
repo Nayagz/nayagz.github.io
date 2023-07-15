@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
     <header>
@@ -32,10 +33,7 @@
       <section id="about" class="section-container flex-center full-vh">
         <h2 class="med-title">About Me</h2>
         <p class="about-text">
-          Hello World! I'm Narjis, a proud tech enthusiast, coding aficionado
-          and globetrotter who's fascinated with the intricacies of AI.
-          <br /><br />
-          I'd definitely say my curiosity is the main trait that has driven the
+      I'd definitely say my curiosity is the main trait that has driven the
           progression of my life. I was born in Marseille, France and have lived
           in Canada, Australia, South Korea, Portugal, United Kingdom and most
           notably China, where I spent an enlightening 7 years soaking up the
@@ -54,10 +52,9 @@
           my mark in a more technical domain.
         </p>
       </section>
-
       <section id="journey" class="section-container flex-center full-vh">
         <h2 class="med-title">Roadmap to coding</h2>
-        <p class="about-text">
+       <p class="about-text">
           Embarking on the road to coding has been nothing short of a thrilling
           expedition for me. It all started with the basics - HTML and CSS. As I
           started to feel more comfortable with it, I decided to give JavaScript
@@ -74,29 +71,43 @@
       </section>
       <section id="portfolio" class="section-container flex-center full-vh">
         <h2 class="med-title">Portfolio</h2>
-        <p class="about-text">
-          Hey there! Let me introduce you to my first-ever personal project,
-          born out of my absolute obsession for Sudoku. Yes, you read that
-          right! Sudoku has been my daily dose of delight, and what better way
-          to celebrate that love than by creating my very own version? Stay
-          tuned for some Sudoku magic!</br>
-          <a href="https://nayagz.github.io/Sudokucoolors/">This is my colorful sudoku</a>
-        </p>
-        <p class="about-text">
-          📱Here's a playful, yet professional take on that: I embarked on a
-          journey of curiosity with FreeCodeCamp, and what started as a spark of
-          interest soon turned into an enriching expedition. My dedication and
-          thirst for learning rewarded me with multiple certifications,
-          testament to the countless hours I've happily devoted to this
-          endeavor, and continue to do so to this day.📱</br>
-          <a href="https://www.freecodecamp.org/certification/fccdf439ec1-ea53-4803-b195-321ac194c780/responsive-web-design">Responsive Web Design</a></br>
-          <a href="https://www.freecodecamp.org/certification/fccdf439ec1-ea53-4803-b195-321ac194c780/javascript-algorithms-and-data-structures">Javascript Algorithms and Data-structures</a></br>
-          <a href="https://www.freecodecamp.org/certification/fccdf439ec1-ea53-4803-b195-321ac194c780/scientific-computing-with-python-v7">Scientific Computing with Python</a></br>
-        </p>
+        <div class="portfolio-container">
+          <div class="portfolio-item">
+            <h3 class="sub-title">Sudoku Project</h3>
+      <img src="https://github.com/Nayagz/Sudokucoolors/blob/main/Ssudokucoolors.png" alt="Sudoku Project">
+            <p class="about-text">
+              Hey there! Let me introduce you to my first-ever personal project,
+              born out of my absolute obsession for Sudoku. Yes, you read that
+              right! Sudoku has been my daily dose of delight, and what better way
+              to celebrate that love than by creating my very own version? Stay
+              tuned for some Sudoku magic!</br>
+              <a href="https://nayagz.github.io/Sudokucoolors/">This is my colorful sudoku</a>
+            </p>
+          </div>
+          <div class="portfolio-item">
+            <h3 class="sub-title">FreeCodeCamp Certifications</h3>
+      <img src="https://github.com/Nayagz/Nayagz.github.io/blob/main/fcc1.png" alt="FreeCodeCamp Certifications">
+      <img src="https://github.com/Nayagz/Nayagz.github.io/blob/main/fcc2.png" alt="FreeCodeCamp Certifications">
+      <img src="https://github.com/Nayagz/Nayagz.github.io/blob/main/fcc3.png" alt="FreeCodeCamp Certifications">
+            <p class="about-text">
+              📱Here's a playful, yet professional take on that: I embarked on a
+              journey of curiosity with FreeCodeCamp, and what started as a spark of
+              interest soon turned into an enriching expedition. My dedication and
+              thirst for learning rewarded me with multiple certifications,
+              testament to the countless hours I've happily devoted to this
+              endeavor, and continue to do so to this day.📱</br>
+              <a href="https://www.freecodecamp.org/certification/fccdf439ec1-ea53-4803-b195-321ac194c780/responsive-web-design">Responsive Web Design</a></br>
+              <a href="https://www.freecodecamp.org/certification/fccdf439ec1-ea53-4803-b195-321ac194c780/javascript-algorithms-and-data-structures">Javascript Algorithms and Data-structures</a></br>
+              <a href="https://www.freecodecamp.org/certification/fccdf439ec1-ea53-4803-b195-321ac194c780/scientific-computing-with-python-v7">Scientific Computing with Python</a></br>
+            </p>
+          </div>
+        </div>
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
       </section>
       <section id="contact" class="section-container flex-center full-vh">
         <h2 class="med-title">Contact Me</h2>
-        <p class="about-text">Email: narjis.yagoubi@gmail.com</p>
+        <a href="mailto:narjis.yagoubi@gmail.com"><i class="fas fa-envelope"></i> Email</a>
       </section>
       <div class="slideshow">
         <img src="img1.jpg" class="mySlides" />
