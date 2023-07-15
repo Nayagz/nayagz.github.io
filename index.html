@@ -3,86 +3,90 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    body {
-        background-image: url(https://wallpaperaccess.com/full/4219085.png);
-        background-size: cover;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-
-    h1 {
-        font-family: Calibri;
-        font-size: 40px;
-        color: white;
-    }
-
-    h2 {
-        font-family: Calibri;
-        font-size: 30px;
-        color: white;
-    }
-
-    p {
-        font-family: Calibri;
-        font-size: 20px;
-        color: white;
-    }
-
-    #sidebar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100px;
-        color: white;
-        padding: 20px;
-    }
-
-    #sidebar ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #sidebar ul li {
-        padding: 10px 0;
-    }
-
-    .content {
-        width: 70%;
-        max-width: 600px;
-        padding: 60px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-  </style>
+  <title>Nana's Web Development Journey</title>
+  <meta name="description" content="Showcase of Nana's work in Web Development">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <div id="sidebar" class="clearfix">
     <div id="sidebar-content">
       <ul id="pages" class="list">
-        <li data-ballon="right" data="home">Home</li>
-        <li data-ballon="right" data="about">About</li>
-        <li data-ballon="right" data="contact">Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
   <div class="content">
-    <h1>Hello stranger, welcome to my personal website</h1>
-    <h2>About Me</h2>
-    <p>Hey! My name is Nana. I am a product manager with a new passion for software development. I like this, and that.</p>
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p>Email: nana.doe@example.com</p>
-      <p>Phone: (123) 456-7890</p>
+    <div id="home">
+      <h1>Hello stranger, welcome to my personal website</h1>
+    </div>
+    <div id="about">
+      <h2>About Me</h2>
+      <p>Hey! My name is Nana. I am a product manager with a new passion for software development. I like this, and that.</p>
+    </div>
+    <div id="portfolio">
+      <h2>My Portfolio</h2>
+      <p>Here are some of my projects...</p>
+      <!-- Add your projects here -->
+    </div>
+    <div id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
+  <!-- Insert the JavaScript code here if needed -->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nana's Web Development Journey</title>
+  <meta name="description" content="Showcase of Nana's work in Web Development">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="sidebar" class="clearfix">
+    <div id="sidebar-content">
+      <ul id="pages" class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <div id="home">
+      <h1>Hello stranger, welcome to my personal website</h1>
+    </div>
+    <div id="about">
+      <h2>About Me</h2>
+      <p>Hey! My name is Nana. I am a product manager with a new passion for software development. I like this, and that.</p>
+    </div>
+    <div id="portfolio">
+      <h2>My Portfolio</h2>
+      <p>Here are some of my projects...</p>
+      <!-- Add your projects here -->
+    </div>
+    <div id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <!-- Insert the JavaScript code here if needed -->
 </body>
 </html>
