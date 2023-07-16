@@ -1,135 +1,204 @@
 :root {
-    --primary-color: #e2cc58;
-    --secondary-color: #b76049;
-    --tertiary-color: #38383b;
-    --black-color: #000000;
-  
-    --main-font: "Helvetica", sans-serif;
-    --title-font: "Century Gothic", sans-serif;
-  
+    --white: #EDE3E9;
+    --pink: #D82174;
+    --black: #0A0A0A;
+    --lightblack: #141414;
+    --purple: #7F1A8D;
+    --lightpink: #EBC3DB;
+
+    --main-font: 'Helvetica', sans-serif;
+    --title-font: 'Century Gothic', sans-serif;
+
     --page-max-width: 1200px;
     --site-margin: 4vw;
   }
-  
-  * {
+
+ body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Inter", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("./bg/pixels.png");
+  min-height: 700px;
+}
+
+.bgimg-2 {
+  background-image: url("./bg/pixels2.png");
+  min-height: 680px;
+}
+
+.bgimg-3 {
+  background-image: url("./bg/pixels3.png");
+  min-height: 400px;
+}
+
+.caption {
+  background-color: var(--purple);
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  width: 600px;
+  text-align: center;
+  color: #000;
+  padding: 40px 16px;
+}
+
+.road {
+  background-color: var(--lightpink);
+  position: absolute;
+  left: 16.66%;
+  top: 20%;
+  width: 800px;
+  text-align: center;
+  color: var(--black);
+  padding: 40px 66px;
+}
+
+.caption span.title {
+  background-color: #A130A7;
+  padding: 16px 16px;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: var(--main-font);
-    background-image: url("https://github.com/Nayagz/Nayagz.github.io/blob/main/7.jpg?raw=true");
-    background-color: var(--primary-color);
+    background-color: var(--black);
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--tertiary-color);
+    color: var(--purple);
     max-width: var(--page-max-width);
     margin: auto;
-    line-height: 1.6; 
-  }
-  
-  h1,
-  h2,
-  button {
+}
+
+h1, h2, h3, button {
     font-family: var(--title-font);
-  }
-  
-  p {
+}
+
+p {
     font-size: 18px;
-    line-height: 1.6;
-  }
-  
-  .big-title {
+    line-height: 1.3;
+    text-align:justify;
+}
+
+.about_me {
+    color: var(--pink);
+    background-color:var(--white);
+    text-align:center;
+    padding: 80px 256px;
+}
+
+.pfolio {
+    color: var(--white);
+    background-color:var(--lightblack);
+    text-align:center;
+    padding: 80px 256px;
+}
+
+.big-title {
     font-size: 3em;
     font-weight: bold;
-    margin-top: 4em;
-    color: var(--secondary-color);
+    color: var(--white);
     text-align: center;
-    padding: 20px 0;
-  }
-  
-  .med-title {
+    line-height: 1;
+    padding: 0 0;
+}
+
+.mtb {
     font-size: 2em;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--black);
     text-align: center;
-    padding: 20px 0;
-  }
-  .sub-title {
+    line-height: 1;
+    padding: 0 0;
+}
+
+.mtp {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--pink);
+    text-align: center;
+    line-height: 1;
+    padding: 0 0;
+}
+
+.btw {
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    line-height: 1;
+    padding: 0 0;
+}
+
+.med-title {
+    line-height: 1.2;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+    padding: 0 0;
+}
+.sub-title {
+    line-height: 1.2;
     font-size: 24px;
     font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--white);
     text-align: center;
-    padding: 30px 0;
-    line-height: 2;
-    letter-spacing: 1px;
-    border-radius: 10px;
-    max-width: 70%;
-    margin: auto; 
-  }
-  
-  .about-text {
-    width: 90%;
-    text-align: justify;
-    /*    margin: auto; */
-    line-height: 1.6;
-  }
-  
-  .section-container {
-    max-width: 800px;
-    margin: auto;
     padding: 0 0;
-  }
-  
-  #navbar {
-    background-color: var(--tertiary-color);
+}
+
+#navbar {
+    background-color: var(--lightblack);
     padding: 1em;
-    position: sticky;
-  }
-  
-  #navbar ul {
+}
+
+#navbar ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-  }
-  
-  #navbar a {
-    color: var(--secondary-color);
+}
+
+a {
+    color: var(--white);
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.5s ease;
-  }
-  
-  #navbar a:hover {
+}
+
+a:hover {
+    color: var(--pink);
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    color: #f00;
-  }
-  
-  .full-vh {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-    margin-bottom: 10px;
-    height: auto;
-  }
-  
-  .flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
+}
+
   .mySlides {
     display: none;
   }
-  
+
   .portfolio-item {
     display: flex;
     flex-direction: column;
@@ -137,59 +206,30 @@
     align-items: center;
     margin: 20px 0;
   }
-  
+
   .portfolio-item img {
     max-width: 35%;
     height: auto;
     margin-bottom: 1em;
   }
-  
-  a:link {
-    color: darkblue;
-  }
-  a:visited {
-    color: darkblue;
-  }
-  a:hover {
-    color: red;
-  }
-  a:active {
-    color: darkblue;
-  }
-  
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    body {
-      flex-direction: column;
-    }
-    #sidebar {
-      width: 100%;
-      height: auto;
-    }
-    .content {
-      width: 100%;
-      padding: 10px;
-    }
-    .big-title {
-      font-size: 2em;
-    }
-    .about-text {
-      width: 85%;
-    }
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
+
+.parallax {
+  /* The image used */
+  background-image: url("./gfx/edited/codebg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+    background-color: var(--lightblack);
+    color: var(--white);
     text-align: center;
     padding: 10px;
-  }
-  
+}
