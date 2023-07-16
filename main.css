@@ -43,6 +43,7 @@
   .big-title {
     font-size: 3em;
     font-weight: bold;
+    margin-top: 100px;
     color: var(--secondary-color);
     text-align: center;
     padding: 20px 0;
