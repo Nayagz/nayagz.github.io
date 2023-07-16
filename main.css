@@ -26,6 +26,7 @@
     color: var(--tertiary-color);
     max-width: var(--page-max-width);
     margin: auto;
+    line-height: 1.6; 
   }
   
   h1,
@@ -59,7 +60,12 @@
     font-weight: bold;
     color: var(--secondary-color);
     text-align: center;
-    padding: 0 0;
+    padding: 30px 0;
+    line-height: 2;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    max-width: 70%;
+    margin: auto; 
   }
   
   .about-text {
@@ -75,6 +81,31 @@
     padding: 0 0;
   }
   
+  #navbar {
+    background-color: var(--tertiary-color);
+    padding: 1em;
+    position: sticky;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #navbar a {
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  #navbar a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: #f00;
+  }
+  
   .full-vh {
     min-height: 100vh;
     display: flex;
@@ -82,6 +113,7 @@
     justify-content: center;
     align-items: center;
     padding: 2em;
+    margin-bottom: 30px;
   }
   
   .flex-center {
@@ -105,33 +137,9 @@
   }
   
   .portfolio-item img {
-    max-width: 40%;
+    max-width: 35%;
     height: auto;
     margin-bottom: 1em;
-  }
-
-  #navbar {
-    background-color: var(--tertiary-color);
-    padding: 1em;
-  }
-  
-  #navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #navbar a {
-    color: var(--secondary-color);
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.5s ease;
-  }
-  
-  #navbar a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    color: #f00;
   }
   
   @keyframes fadein {
