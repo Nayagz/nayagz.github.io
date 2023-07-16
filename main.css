@@ -32,16 +32,19 @@
 .bgimg-1 {
   background-image: url("./bg/pixels.png");
   min-height: 700px;
+  min-width: 800px;
 }
 
 .bgimg-2 {
   background-image: url("./bg/pixels2.png");
   min-height: 680px;
+  min-width: 800px;
 }
 
 .bgimg-3 {
   background-image: url("./bg/pixels3.png");
   min-height: 400px;
+  min-width: 800px;
 }
 
 .caption {
@@ -109,6 +112,7 @@ p {
     color: var(--pink);
     background-color:var(--white);
     text-align:center;
+    min-width: 800px;
     padding: 80px 256px;
 }
 
@@ -116,6 +120,7 @@ p {
     color: var(--white);
     background-color:var(--lightblack);
     text-align:center;
+    min-width: 800px;
     padding: 80px 256px;
 }
 
